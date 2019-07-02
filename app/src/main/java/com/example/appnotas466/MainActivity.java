@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+
 import com.example.appnotas466.adapters.AlunoAdapter;
 import com.example.appnotas466.modelos.Aluno;
 
@@ -22,13 +23,11 @@ public class MainActivity extends AppCompatActivity {
         // binding
         rvAlunos = findViewById(R.id.rv_alunos);
     }
-
     // chamado sempre que a tela é exibida
     @Override
     protected void onResume() {
         super.onResume();
         carregarDadosDoFirestore();
-
     }
     // Será chamado após o carregar
     private void atualizarListagemAlunos(List<Aluno> alunos){
@@ -40,3 +39,4 @@ public class MainActivity extends AppCompatActivity {
         // TODO: buscas dados no banco de dados
     }
 }
+
