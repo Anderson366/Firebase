@@ -15,10 +15,6 @@ import java.util.List;
 // 3°
 public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHolder> {
 
-
-
-
-
     // 2°
     private List<Aluno> alunos;
     private Context context;
@@ -59,7 +55,5 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHol
             txtAlunoMedia = itemView.findViewById(R.id.txt_aluno_media);
             txtAlunoSituacao = itemView.findViewById(R.id.txt_aluno_situacao);
         }
-
     }
-
 }
